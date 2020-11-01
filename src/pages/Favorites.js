@@ -1,14 +1,14 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React from 'react';
+import { SafeAreaView, View, Text } from 'react-native';
 
 const Favorites = (props) => {
     return (
-        <View>
-            <Text>Favorites</Text>
-        </View>
-    )
+        <SafeAreaView>
+            <View>
+                <Text>Favorites</Text>
+            </View>
+        </SafeAreaView>
+    );
 }
 
-export {Favorites};
-
-const styles = StyleSheet.create({})
+export { Favorites };

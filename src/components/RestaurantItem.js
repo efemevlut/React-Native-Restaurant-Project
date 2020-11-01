@@ -1,24 +1,25 @@
-import React from 'react'
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
+import React from 'react';
+import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 
-const RestaurantItem = ({item}) => {
+const RestaurantItem = ({ item }) => {
     return (
-        <View style={styles.container}>
-            <Text style={styles.text}>{item.name}</Text>
-        </View>
+        <TouchableOpacity>
+            <View style={styles.container}>
+                <Text style={styles.text}>{item.name}</Text>
+            </View>
+        </TouchableOpacity>
     )
 }
 
-export {RestaurantItem};
+export { RestaurantItem }
 
 const styles = StyleSheet.create({
     container: {
         padding: 10,
         margin: 5,
-        borderRadius: 7,
+        borderRadius: 5
     },
     text: {
-        fontSize: 14,
-        fontWeight: "300",
+        fontWeight: '200'
     }
 })
